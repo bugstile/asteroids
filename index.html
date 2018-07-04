@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asteroids</title>
+</head>
+<body>
+    <style>
+        html, body {
+            font-family: "Arial", sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #010101;
+        }
+
+        canvas {
+            border: 3px solid beige;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            color: orange;
+            margin-bottom: -42px;
+        }
+
+        #below p {
+            text-align: center;
+            color: beige;
+        }
+
+        #below p span {
+            color: orange;
+        }
+
+        #ab {
+            color: beige;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #a {
+            text-align: left;
+        }
+
+        #b {
+            text-align: right;
+            margin-top: -34px;
+        }
+    </style>
+    
+    <h1>Asteroids</h1>
+    <div id="ab">
+        <div id="a">
+            <p>Controls: ARROWKEYS</p>
+        </div>
+        <div id="b">
+            <p>Shooting: SPACE</p>
+        </div>
+    </div>
+    <canvas id='canvas' width='800' height='600'>
+        Your browser does not support the element HTML5 Canvas.
+    </canvas>
+    <div id="below">
+        <p>Instructions:</p>
+        <p>The difficulty level increases every 500 points and adds 4 new asteroids</p>
+        <p><span>Orange cube</span> is a powerup which spawns every 100 points. <span
+                style="color:yellow">Press P to pause</span></p>
+    </div>
+</body>
+<script src="js/Game.js"></script>
+<script src="js/Player.js"></script>
+<script src="js/Func.js"></script>
+<script src="js/Asteroid.js"></script>
+<script src="js/Powerup.js"></script>
+<script src="js/Projectile.js"></script>
+<script src="js/Keyhandler.js"></script>
+<script src="js/VectorAndForces.js"></script>
+<script src="js/Enemy.js"></script>
+</html>
